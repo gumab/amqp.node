@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 var amqp = require('amqplib/callback_api');
 
@@ -21,6 +20,8 @@ function on_connect(err, conn) {
     });
 
     function doWork(msg) {
+        var jsonObj = JSON.parse(msg);
+
       var body = msg.content.toString();
       console.log(" [x] Received '%s'", body);
       var secs = body.split('.').length - 1;
