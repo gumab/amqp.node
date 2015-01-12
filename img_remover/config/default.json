@@ -1,0 +1,116 @@
+
+
+{
+	"remove": {
+		"dest_path_option": [
+            {	"gd_no":"115905000",
+                "base_path":"/goodsimg_ifs/goodsimg/goodsdaq_image/service_image_test2",
+                "base_url":"http://goodsimg.gmarket.co.kr/service_image_test",
+                "dir_type":"1"
+            },
+            {	"gd_no":"131544000",
+                "base_path":"/gdimg3_ifs/gdimg3/goodsdaq_image/service_image_test2",
+                "base_url":"http://gdimg3.gmarket.co.kr/service_image_test",
+                "dir_type":"2"
+            },
+            {	"gd_no":"179078463",
+                "base_path":"/gdimg4_ifs/gdimg4/goodsdaq_image/service_image_test2",
+                "base_url":"http://gdimg4.gmarket.co.kr/service_image_test",
+                "dir_type":"2"
+            },
+            {	"gd_no":"250107420",
+                "base_path":"/gdimg5_ifs/gdimg5/goodsdaq_image/service_image_test2",
+                "base_url":"http://gdimg5.gmarket.co.kr/service_image_test",
+                "dir_type":"2"
+            },
+            {	"gd_no":"999999999",
+				"base_path":"/gdimg1_ifs/gdimg1/goodsdaq_image/service_image_test2",
+				"base_url":"http://gdimg1.gmarket.co.kr/service_image_test",
+				"dir_type":"2"
+			}
+		]
+	},
+
+	"dir_path":{
+		"basic": [
+			"middle_img", 
+			"middle_img2", 
+			"middle_img3", 
+			"middle_jpgimg", 
+			"middle_jpgimg2", 
+			"middle_jpgimg3", 
+			"gallery_img", 
+			"gallery_jpgimg", 
+			"large_img", 
+			"large_jpgimg", 
+			"exlarge_img", 
+			"qrcode_img", 
+			"shop_img", 
+			"small_img", 
+			"small_img2", 
+			"small_jpgimg"
+		],
+		"more": [
+			"middle_moreimg",
+			"exlarge_moreimg",
+			"shop_moreimg",
+			"small_moreimg"
+		],
+		"soho": [
+			"soho_img/large_img",
+			"soho_img/middle_img",
+			"soho_img/shop_img",
+			"soho_img/small_img",
+			"lookbook_img/large_img",
+			"lookbook_img/middle_img",
+			"lookbook_img/small_img"
+		],
+		"brand": [
+			"small_img",
+			"shop_img",
+			"middle_img",
+			"large_img"
+		]
+	},
+
+	"mq": {
+        "remove": {
+            "host": "172.30.137.190",
+            "port": 5673,
+            "login": "imguser",
+            "password": "Esmuser!!22",
+            "vhost": "gmkt_img_test",
+            "channel": "removeGdImg",
+            "queue": "deleteGdImg_test"
+        },
+		"remove2": {
+			"host": "10.238.130.137",
+			"port": 5672,
+			"login": "test1",
+			"password": "test1",
+			"vhost": "ipb",
+			"channel": "removeGdImg",
+			"queue": "TEST_QUEUE"
+		},
+        "remove3": {
+            "host": "10.238.128.23",
+            "port": 5672,
+            "login": "test3",
+            "password": "test",
+            "vhost": "/",
+            "channel": "removeGdImg",
+            "queue": "task_queue"
+        }
+
+	},
+	"cluster":{
+		"maxWorker": 3
+	},
+    "api":{
+        "hostname":"devtspapi.gmarket.co.kr",
+        "port":80,
+        "path":"/GMKT.TSP.Web.Services/Selling.asmx"
+    },
+    "brandDirCnt":10,
+    "method_name":"AddGimgDelLog"
+}
